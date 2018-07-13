@@ -24,23 +24,26 @@ module.exports = function (app) {
     var total = 0;
     var match1 = 0;
     var userData = req.body;
-    console.log(userData.name);
-    var userName = userData.name;
-    var userImage = userData.photo;
+    // console.log(userData.name);
+    // var userName = userData.name;
+    // var userImage = userData.photo;
+    //calculate total of form
     var userScores = userData.scores;
-    console.log(userScores);
+    // console.log(userScores);
     for (var i = 0; i < 10; i++) {
       total = total + parseInt(userScores[i]);
     }
 
-
+  //    Compare total of for to total of friends in data base.
     for (var i = 0; i <  friends.length; i++) {
       match1 = 0;
       for (var j = 0; j < 10; j++) {
         match1 = match1 + parseInt(friends[i].scores[j]);
         
       }
-      console.log(match1);
+
+      //Look for the one with the smallest point difference.
+      // console.log(match1);
       delta = Math.abs(total - match1);
       if (delta < friendMatch.difference) {
         friendMatch.name = friends[i].name;
@@ -49,8 +52,8 @@ module.exports = function (app) {
       }
     }
 
-    console.log(total);
-    console.log(match1);
+    // console.log(total);
+    // console.log(match1);
     friends.push(userData);
 
     res.json(friendMatch)
