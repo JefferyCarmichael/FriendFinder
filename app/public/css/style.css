@@ -1,0 +1,64 @@
+*{
+    font-family: 'Montserrat', sans-serif;nt-family: 'Poiret One', cursive;
+}
+/* survey */
+.mr-2{
+       font-weight:400;
+    font-family: 'Montserrat', sans-serif;nt-family: 'Poiret One', cursive;
+    font-size: 18px;
+}
+
+#title1{
+    font-family: 'Fugaz One', cursive;   
+    text-shadow: 5px 5px 15px rgb(85, 85, 85);
+    font-size: 50px;
+}
+
+#form1{
+    margin-top: 10%;
+    width: 80%;
+    background-color: rgba(252, 248, 248, 0.973);
+    box-shadow: inset 0 0 3px rgb(117, 116, 116);
+    border-radius: 5px;
+}
+
+h1{
+    padding-top:20px;
+}
+
+/* home */
+#header{
+    margin-top: 10%;
+    box-shadow: inset 0 0 3px rgb(131, 127, 127);    
+}
+
+#header2
+{
+    font-size: 80px;
+    font-family: 'Fugaz One', cursive;
+    text-shadow: 5px 5px 15px rgb(85, 85, 85);
+    /* font-weight: bold; */
+}
+
+label{
+    height: 40px;
+}
+
+#space{
+    height: 40px;
+}
+
+.lead{
+    font-size: 26px;
+    text-shadow: 1px 1px 2px rgb(85, 85, 85);  
+}
+
+#header3{
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgb(85, 85, 85);  
+}
+
+.btn-primary,#btnSubmit{
+    text-shadow: 1px 1px 3px rgb(49, 49, 49);   
+    /* font-weight: bold; */
+}
