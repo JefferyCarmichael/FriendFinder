@@ -10,13 +10,15 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
 </head>
-<div class="container" id="form1">
+<div class="container z-depth-5" id="form1">
     
         <h1 id="title1">Questionare</h1>
         <hr class="my-4">
@@ -149,7 +151,7 @@
            <option value="5">5 (Strongly Agree)</option>  
             </select> 
           
-            <button type="submit" class="btn btn-primary my-1" id="btnSubmit">Submit</button>
+            <button type="submit" class="btn btn-primary my-1" id="btnSubmit"> <span class="fas fa-search"></span>  Submit</button>
            </form>
 
            <hr> 
@@ -236,7 +238,7 @@ console.log(friendData);
 <body>   
         <footer>
                 <div class="container">
-                        <p><a href ="/">Home</a> | <a href="https://github.com/JefferyCarmichael/FriendFinder.git">GitHub Repo</a></p>
+                        <p><a href ="/"><span class="fas fa-home"></span> Home</a> | <a href="https://github.com/JefferyCarmichael/FriendFinder.git"><span class="fab fa-github"></span> GitHub Repo</a> | <a href="/api/friends"><span class="far fa-address-card"></span>  API Friends List</a></p>
                       </div>
         </footer>
 </body>
