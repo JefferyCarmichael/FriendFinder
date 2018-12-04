@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Friend Finder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
-        <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" >
- 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+
     <!-- <script src="main.js"></script> -->
     <!--Jumbotron Main Menu-->
 </head>
-<body>
-    <div class="container">
-    <div class="jumbotron"  id="header">
-        <h1 class="display-4"id="header2">Friend Finder!</h1>
-        <p class="lead">Answer a few basic questions.</p>
-        <hr class="my-4">
-        <p id="header3">Get matched with a compatible friend.</p>
-        <p class="lead">
-            <span id="space">
-          <a class="btn btn-primary btn-lg" href="/survey" role="button" ><span class="fas fa-chevron-right"></span> Take Our Survey</a>
-          </span>
-        </p>
-      </div><!--Jumbotron end-->
-    </div>
-</body>
 
-<footer>
+<body>
+    <div class="container" id="main">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+            </div>
+          </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+                <p class="lead">Answer a few basic questions.</p>
+            </div>
+            <!--col end-->
+    </div>
+            
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                        <div class="col-sm-7">
+                            <p id="header3">Get matched with a compatible friend.</p>
+                        </div>
+                        <!--col end-->
+                    </div><!--row end -->
+
+      
+
+        <div class="row">
+                <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <p class="lead">
+                    <span id="space">
+                        <a class="btn btn-primary btn-lg" href="/survey" role="button"><span class="fas fa-chevron-right"></span>
+                            Take Our Survey</a>
+                    </span>
+                </p>
+            </div>
+            <!--col end-->
+        </div>
+        <!--row end -->
+    </div>
+
+    <footer>
         <div class="container">
-                <p><a href="/api/friends"><span class="far fa-address-card"></span> API Friends List</a> | <a href="https://github.com/JefferyCarmichael/FriendFinder.git"><span class="fab fa-github"></span> GitHub Repo</a></p>
+            <div class="row  fixed-bottom"id="pageFooter">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-9" >
+                    <p><a href="/api/friends"><span class="far fa-address-card"></span> API Friends List</a> | <a href="https://github.com/JefferyCarmichael/FriendFinder.git">
+                    <span class="fab fa-github"></span> GitHub Repo</a></p>
+                </div>
               </div>
-</footer>
-</html><span class="far fa-address-card"></span>
+        </div>
+    </footer>
+
+</body>

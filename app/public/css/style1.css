@@ -1,0 +1,90 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+/* survey */
+.mr-2{
+       font-weight:400;
+       font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+#title1{
+    font-family: 'Fugaz One', cursive;   
+    text-shadow: 5px 5px 15px rgb(85, 85, 85);
+    font-size: 50px;
+}
+
+#form1{
+    margin-top: 10%;
+    width: 80%;
+    background-color: rgba(252, 248, 248, 0.973);
+    box-shadow:  6px 12px 20px 10px rgba(145, 143, 143, 0.479);
+    border-radius: 5px;
+}
+
+h1{
+    padding-top:20px;
+}
+
+/* home */
+#header{
+    margin-top: 10%;
+    box-shadow: 8px 8px 25px 10px rgba(183, 187, 189, 0.726);  
+   
+    background-image: url("/images/freely.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.9;
+}
+
+#header2
+{
+    font-size: 80px;
+    font-family: 'Fugaz One', cursive;
+    text-shadow: 5px 5px 15px rgb(85, 85, 85);
+    /* font-weight: bold; */
+}
+
+label{
+    height: 40px;
+}
+
+#space{
+    height: 40px;
+}
+
+.lead{
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(85, 85, 85);  
+}
+
+#header3{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(85, 85, 85);  
+    
+}
+
+.btn-primary,#btnSubmit{
+    text-shadow: 1px 1px 3px rgb(49, 49, 49);   
+    /* font-weight: bold; */
+}
+
+footer{
+    margin-top: 5%;
+    font-weight: bold;
+    text-shadow: 1px 1px 8px rgb(87, 85, 85);  
+}
+
+/* modal */
+#matchName{
+text-align: center;
+text-shadow: 1px 1px 8px rgb(87, 85, 85);  
+background-repeat: no-repeat;
+background-size:cover;
+}
+body{
+    background-image: url("/images/sky.jpg");
+
+}
