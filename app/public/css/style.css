@@ -18,7 +18,7 @@
     width: 90%;
     margin-left: 2.1875rem;
 }
-
+/* Survey */
 #form1{
     margin-top: 15%;
     width: 80%;
@@ -44,49 +44,52 @@ label{
 #space{
     height: 2.5rem;
 }
-
+/* Frontpage header 1 */
 .lead{
-    font-size: 1.625rem;
+    font-size: 1.825rem;
     font-weight: bold;
-    text-shadow: .0625rem .0755rem .145rem rgba(121, 105, 13, 0.568);  
-}
+    text-shadow: .0625rem .0625rem .125rem rgb(85, 85, 85), .0625rem .0925rem .225rem rgb(48, 48, 48);   
+    color: rgb(220, 221, 175);
 
+}
+/* Front page header 2 */
 #header3{
-    font-size: 1.25rem;
+    font-size: 1.525rem;
     font-weight: bold;
-    text-shadow: .0625rem .0625rem .125rem rgb(85, 85, 85);     
+    text-shadow: .0625rem .0625rem .125rem rgb(85, 85, 85), .0625rem .0925rem .225rem rgb(48, 48, 48);  
+    color: rgb(220, 221, 175);
 }
 
 .btn-primary{
     margin-top: 20%;
 }
+/* Submit and Take our survey buttons */
 .btn-primary,#btnSubmit{
     text-shadow: .0625rem .0625rem .1875rem rgb(49, 49, 49);   
-    box-shadow:  .125rem .25rem .9375rem .1475rem rgba(75, 75, 75, 0.479);
-    background-color: rgba(0, 255, 255, 0.075);
-    border-color: rgba(0, 255, 255, 0.192);
+    box-shadow:  .125rem .25rem .9375rem .1475rem rgba(78, 78, 78, 0.356);
+    background-color: rgba(166, 248, 248, 0.199);
+    border-color: rgba(0, 255, 255, 0.212);
     margin-left: auto;
     margin-right: auto;
-        border-radius: 1.5625rem;
- 
+    border-radius: 1.5625rem;
 }
-/* Primary submit button */
+/* Take Our Survey button hover*/
 .btn-primary:hover {
     color: rgb(234, 236, 122);
-    background-color: rgba(0, 255, 255, 0.055);
-    box-shadow:inset 0rem 0rem 1.00rem .125rem rgba(153, 163, 18, 0.4) !important;
+    background-color: rgba(238, 240, 137, 0.055);
+    box-shadow:inset 0rem 0rem 1.00rem .125rem rgba(245, 250, 177, 0.4) !important;
     background-color: rgba(0, 255, 255, 0.055);
     border-color:  rgba(153, 163, 18, 0.4);
 }
-
+/* Take Our Survey button click*/
 .btn-primary:active {
         color: rgb(114, 240, 190) !important;
         box-shadow:inset 0rem 0rem 1.00rem rgba(18, 163, 105, 0.4) !important; 
         transform: translateY(.125rem);
         background-color: rgba(0, 255, 255, 0.055)!important;
-        border-color:  rgba(153, 163, 18, 0.4)!important;
+        border-color:  rgba(153, 163, 18, 0.4);
 }
-/* Questionare submit */
+/* Questionare Submit  hover*/
 #btnSubmit:hover {
     color: rgb(234, 236, 122);
     background-color: rgba(0, 255, 255, 0.055);
@@ -94,21 +97,31 @@ label{
     background-color: rgba(0, 255, 255, 0.055);
     border-color:  rgba(153, 163, 18, 0.4);
 }
+/* Questionare Submit  active*/
 
 #btnSubmit:active {
         color: rgb(114, 240, 190) !important;
-        box-shadow:inset 0rem 0rem 1.00rem rgba(18, 163, 105, 0.4) !important; 
+        box-shadow:inset 0rem 0rem 1.00rem rgba(21, 153, 170, 0.151) !important; 
         transform: translateY(.125rem);
         background-color: rgba(0, 255, 255, 0.055)!important;
-        border-color:  rgba(153, 163, 18, 0.4)!important;
+        border-color:  rgba(18, 163, 115, 0.075)!important;
 }
 
 footer{
     margin-top: 5%;
     font-weight: bold;
-    text-shadow: .0625rem .0625rem 8px rgb(87, 85, 85);  
+    text-shadow: .0625rem .0625rem 8px rgb(10, 4, 26)!important;  
+    color: rgb(148, 148, 146);
 }
 
+/* unvisited link */
+a {
+    color: rgb(240, 240, 231)!important;
+  }
+
+  a:hover {
+    color: rgba(240, 241, 166, 0.979)!important;
+  }
 /* modal */
 #matchName{
 text-align: center;
@@ -116,23 +129,24 @@ text-shadow: .0625rem .0625rem 8px rgb(87, 85, 85);
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
-
+/* Page background image */
 body{
-    background-image: url("/images/sky.jpg");
+    background-image: url("/images/people.jpg");
     background-repeat: no-repeat;
     background-size:cover;  
     background-attachment: fixed;
 }
-
+/* Friend Finder image home page */
 .jumbotron{
     background-color: rgba(0, 0, 0, 0);
     background-image: url("/images/friend_lable.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90% 100%;
+    background-size: 85% 100%;
     margin-top:1.25rem;
 }
 
+/* Survey & Home page text shadow */
 h3,h4,.mr-2{  
      text-shadow: .0625rem .0625rem .1875rem rgba(49, 49, 49, 0.575);   
 }
@@ -140,11 +154,17 @@ h3,h4,.mr-2{
 #sub{
     padding-bottom: 1.25rem;
 }
-
+/* Survey image @ top */
 img{
     margin-top: 1.25rem;
     width: 95%;
     height: 100%;
+}
+/* Modal */
+.fill{
+    background-image: url("/images/concrete_seamless.png");
+    box-shadow: 0rem 0rem .20rem .125rem rgba(44, 44, 44, 0.4) !important;
+
 }
 
 @media screen and (max-width: 650px) {
@@ -166,3 +186,5 @@ img{
     }
    
   }
+
+  

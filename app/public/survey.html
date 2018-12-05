@@ -166,16 +166,40 @@
 
     
 
-           <!-- Small modal -->
-<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="results">
+           <!-- Survey Matched modal -->
+<div class="modal fade" tabindex="-1" role="dialog"  id="results">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      <h2 id="matchName"></h2>
+        <div class="modal-header fill">
+            <h2 class="modal-title" id="matchName"></h2>
+          </div>
+          <div class="modal-body">
       <img id="matchPhoto" >
- 
+          </div>
+      <div class="modal-footer fill">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+        </div>
+
     </div>
   </div>
 </div>
+
+           <!-- Survey Incomplete modal -->
+           <div class="modal" tabindex="-1" role="dialog" id="orElse">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header fill">
+                    <h3 class="modal-title">The survey is incomplete.</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p><h4>Please fill out all fields and answer all questions before submitting!</h4></p>
+                  </div>
+                  <div class="modal-footer fill">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                  </div>
+                </div>
+              </div>
+            </div>            
                 
  </div> <!--Container End -->
 
@@ -238,7 +262,9 @@ console.log(friendData);
 
         });
       } else {
-        alert("Please fill out all fields and answer all questions before submitting!");
+        /*alert("Please fill out all fields and answer all questions before submitting!");*/
+        $("#orElse").modal("toggle");
+
       }
     });
 </script>
@@ -250,8 +276,8 @@ console.log(friendData);
                 <div class="container">
                   <div class="row">
                     <!-- <div class="col-sm-4"></div> -->
-                    <div class="col-sm-12" align="center">
-                        <p><a href ="/"><span class="fas fa-home"></span> Home</a> | <a href="https://github.com/JefferyCarmichael/FriendFinder.git"><span class="fab fa-github"></span> GitHub Repo</a> | <a href="/api/friends"><span class="far fa-address-card"></span>  API Friends List</a></p>
+                    <div class="col-sm-12" align="center" id="footer">
+                        <p ><a href ="/"><span class="fas fa-home"></span> Home</a> | <a href="https://github.com/JefferyCarmichael/FriendFinder.git"><span class="fab fa-github"></span> GitHub Repo</a> | <a href="/api/friends"><span class="far fa-address-card"></span>  API Friends List</a></p>
                       </div>
                       </div>
                       </div>
