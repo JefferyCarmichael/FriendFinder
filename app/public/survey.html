@@ -1,230 +1,240 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Survey</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
 </head>
 
 <body>
-<div class="container z-depth-5" id="form1">
+  <div class="container z-depth-5" id="form1">
     <div class="row">
       <div class="col-sm-6"></div>
-      <div class="col-sm-6"id="logo"><img src="/images/friend_title.png"   alt="Friend Finder Logo"></div>
+      <div class="col-sm-6" id="logo"><img src="/images/friend_title.png" alt="Friend Finder Logo"></div>
     </div>
-     <h1 id="title1">Questionare</h1> 
-        <hr class="my-4">   
-        <h3>Tell Us About You</h3>
-        <h5>Your Name (Required)</h5>
-        <input type="text" id="name" class="form-control" required placeholder="Name">
-    
-        <h5>Link to Photo (Required)</h5>
-        <input type="text" id="photo" class="form-control" required  placeholder="example: http://www.website.com/photo.jpg">
-    
-        <hr>
+    <h1 id="title1">Questionare</h1>
+    <hr class="my-4">
+    <h3>Tell Us About You</h3>
+    <h5>Your Name (Required)</h5>
+    <input type="text" id="name" class="form-control" required placeholder="Name">
 
-<!-- Question 1 -->
+    <h5>Link to Photo (Required)</h5>
+    <input type="text" id="photo" class="form-control" required placeholder="example: http://www.website.com/photo.jpg">
 
-    
-  
-        <!--Question 1-->
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">1. Being candid is more important than people’s feelings.</label>
-            <select class="custom-select my-1 mr-sm-2" id="q1">
-              <option selected>Choose an Option</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2 (Disagree)</option>
-              <option value="3">3 (Nuetral)</option>
-              <option value="4">4 (Agree)</option>
-              <option value="5">5 (Strongly Agree)</option>
-            </select>
-    
+    <hr>
 
-            <!--Question 2-->
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">2. You feel more energetic after spending time with a group of people.</label>
-            <select class="custom-select my-1 mr-sm-2" id="q2">
-            <option selected>Choose an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2 (Disagree)</option>
-            <option value="3">3 (Nuetral)</option>
-            <option value="4">4 (Agree)</option>
-            <option value="5">5 (Strongly Agree)</option>  
-        </select>           
-           
-          
-           <!--Question 3-->
-           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">3. You are an outdoors type person.</label>
-           <select class="custom-select my-1 mr-sm-2" id="q3">
-           <option selected>Choose an Option</option>
-           <option value="1">1 (Strongly Disagree)</option>
-           <option value="2">2 (Disagree)</option>
-           <option value="3">3 (Nuetral)</option>
-           <option value="4">4 (Agree)</option>
-           <option value="5">5 (Strongly Agree)</option>  
-       </select> 
-       
-            <!--Question 4-->
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">4. You have a lot of friends.</label>
-            <select class="custom-select my-1 mr-sm-2" id="q4">
-            <option selected>Choose an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2 (Disagree)</option>
-            <option value="3">3 (Nuetral)</option>
-            <option value="4">4 (Agree)</option>
-            <option value="5">5 (Strongly Agree)</option>  
-        </select> 
-
-           <!--Question 5-->
-           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">5. Your mind is always buzzing with unexplored ideas and plans.</label>
-           <select class="custom-select my-1 mr-sm-2" id="q5">
-           <option selected>Choose an Option</option>
-           <option value="1">1 (Strongly Disagree)</option>
-           <option value="2">2 (Disagree)</option>
-           <option value="3">3 (Nuetral)</option>
-           <option value="4">4 (Agree)</option>
-           <option value="5">5 (Strongly Agree)</option>  
-       </select> 
-
-            <!--Question 6-->
-            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">6. Generally speaking, you rely more on your experience than your imagination.</label>
-            <select class="custom-select my-1 mr-sm-2" id="q6">
-            <option selected>Choose an Option</option>
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2 (Disagree)</option>
-            <option value="3">3 (Nuetral)</option>
-            <option value="4">4 (Agree)</option>
-            <option value="5">5 (Strongly Agree)</option>  
-        </select> 
-
-           <!--Question 7-->
-           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">7. You find it easy to stay relaxed and focused even when there is some pressure.</label>
-           <select class="custom-select my-1 mr-sm-2" id="q7">
-           <option selected>Choose an Option</option>
-           <option value="1">1 (Strongly Disagree)</option>
-           <option value="2">2 (Disagree)</option>
-           <option value="3">3 (Nuetral)</option>
-           <option value="4">4 (Agree)</option>
-           <option value="5">5 (Strongly Agree)</option>  
-       </select> 
+    <!-- Question 1 -->
 
 
-           <!--Question 8-->
-           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">8. You rarely do anything just out of sheer curiosity.</label>
-           <select class="custom-select my-1 mr-sm-2" id="q8">
-           <option selected>Choose an Option</option>
-           <option value="1">1 (Strongly Disagree)</option>
-           <option value="2">2 (Disagree)</option>
-           <option value="3">3 (Nuetral)</option>
-           <option value="4">4 (Agree)</option>
-           <option value="5">5 (Strongly Agree)</option>  
-       </select> 
 
-       
-           <!--Question 9-->
-           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">9. People can rarely upset you.</label>
-           <select class="custom-select my-1 mr-sm-2" id="q9">
-           <option selected>Choose an Option</option>
-           <option value="1">1 (Strongly Disagree)</option>
-           <option value="2">2 (Disagree)</option>
-           <option value="3">3 (Nuetral)</option>
-           <option value="4">4 (Agree)</option>
-           <option value="5">5 (Strongly Agree)</option>  
-       </select> 
+    <!--Question 1-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">1. Being candid is more important than people’s feelings.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q1">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
 
-           <!--Question 10-->
-           <label class="my-1 mr-2" for="inlineFormCustomSelectPref">10. You like to get your way in every situation.</label>
-           <select class="custom-select my-1 mr-sm-2" id="q10">
-           <option selected>Choose an Option</option>
-           <option value="1">1 (Strongly Disagree)</option>
-           <option value="2">2 (Disagree)</option>
-           <option value="3">3 (Nuetral)</option>
-           <option value="4">4 (Agree)</option>
-           <option value="5">5 (Strongly Agree)</option>  
-            </select> 
-            
-           </form>
+    <!--Question 2-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">2. You feel more energetic after spending time with a
+      group of people.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q2">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-            <hr> 
-            <div class="row">
-            <div class="col-sm-12" id=sub>
-            <button type="submit" class="btn btn-primary my-1" id="btnSubmit"> <span class="fas fa-search"></span>  Submit</button>
-            <br>
-          </div>
-          </div>
 
-    
+    <!--Question 3-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">3. You are an outdoors type person.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q3">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
 
-           <!-- Survey Matched modal -->
-<div class="modal fade" tabindex="-1" role="dialog"  id="results">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-        <div class="modal-header fill">
+    <!--Question 4-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">4. You have a lot of friends.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q4">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <!--Question 5-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">5. Your mind is always buzzing with unexplored ideas and
+      plans.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q5">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <!--Question 6-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">6. Generally speaking, you rely more on your experience
+      than your imagination.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q6">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    <!--Question 7-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">7. You find it easy to stay relaxed and focused even when
+      there is some pressure.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q7">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <!--Question 8-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">8. You rarely do anything just out of sheer curiosity.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q8">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <!--Question 9-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">9. People can rarely upset you.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q9">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+
+    <!--Question 10-->
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">10. You like to get your way in every situation.</label>
+    <select class="custom-select my-1 mr-sm-2" id="q10">
+      <option selected>Choose an Option</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2 (Disagree)</option>
+      <option value="3">3 (Nuetral)</option>
+      <option value="4">4 (Agree)</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+
+    </form>
+
+    <hr>
+    <div class="row">
+      <div class="col-sm-12" id=sub>
+        <button type="submit" class="btn btn-primary my-1" id="btnSubmit"> <span class="fas fa-search"></span> Submit</button>
+        <br>
+      </div>
+    </div>
+
+
+
+    <!-- Survey Matched modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="results">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header fill">
             <h2 class="modal-title" id="matchName"></h2>
           </div>
           <div class="modal-body">
-      <img id="matchPhoto" >
+            <img id="matchPhoto">
           </div>
-      <div class="modal-footer fill">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
+          <div class="modal-footer fill">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
 
+        </div>
+      </div>
+    </div>
+
+    <!-- Survey Incomplete modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="orElse">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header fill">
+            <h3 class="modal-title" id="notDone">The survey is incomplete.</h3>
+          </div>
+          <div class="modal-body">
+            <p>
+              <h4>Please fill out all fields and answer all questions before submitting!</h4>
+            </p>
+          </div>
+          <div class="modal-footer fill">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-           <!-- Survey Incomplete modal -->
-           <div class="modal" tabindex="-1" role="dialog" id="orElse">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header fill">
-                    <h3 class="modal-title">The survey is incomplete.</h3>
-                  </div>
-                  <div class="modal-body">
-                    <p><h4>Please fill out all fields and answer all questions before submitting!</h4></p>
-                  </div>
-                  <div class="modal-footer fill">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>            
-                
- </div> <!--Container End -->
+  <!--Container End -->
 
 
-<script>
-  // Get the form inputs
-  $("#btnSubmit").on("click", function(event) {
+  <script>
+    // Get the form inputs
+    $("#btnSubmit").on("click", function (event) {
       event.preventDefault();
-      console.log(  $("#q1").val());
-    console.log( $("#photo").val());
-    console.log( $("#name").val());
+      console.log($("#q1").val());
+      console.log($("#photo").val());
+      console.log($("#name").val());
       // Form validation
       function validateForm() {
         /*If name and url for picture are not present return false*/
         var isValid = true;
-        $(".form-control").each(function() {
-          if ($(this).val()==="") {
+        $(".form-control").each(function () {
+          if ($(this).val() === "") {
             isValid = false;
           }
         });
-/* Check questions 1 thru 10. If no value, return false   */
-        $(".custom-select").each(function() {
-        var num = parseInt($(this).val());
-        console.log("num:"+num);
+        /* Check questions 1 thru 10. If no value, return false   */
+        $(".custom-select").each(function () {
+          var num = parseInt($(this).val());
+          console.log("num:" + num);
           if (isNaN(num)) {
             isValid = false;
             console.log("is false");
@@ -252,14 +262,14 @@
             $("#q10").val()
           ]
         };
-console.log(friendData);
+        console.log(friendData);
         // Post the data to the friends API.
-        $.post("/api/friends", friendData).then( function(data) {
+        $.post("/api/friends", friendData).then(function (data) {
 
           // Show match's name 
           $("#matchName").text(data.name);
-          $("#matchPhoto").attr("src",data.photo);
-          
+          $("#matchPhoto").attr("src", data.photo);
+
 
           // Show the modal with the best match
           $("#results").modal("toggle");
@@ -271,20 +281,23 @@ console.log(friendData);
 
       }
     });
-</script>
+  </script>
 
 
 
-<body>   
-        <footer>
-                <div class="container">
-                  <div class="row">
-                    <!-- <div class="col-sm-4"></div> -->
-                    <div class="col-sm-12" align="center" id="footer">
-                        <p ><a href ="/"><span class="fas fa-home"></span> Home</a> | <a href="https://github.com/JefferyCarmichael/FriendFinder.git"><span class="fab fa-github"></span> GitHub Repo</a> | <a href="/api/friends"><span class="far fa-address-card"></span>  API Friends List</a></p>
-                      </div>
-                      </div>
-                      </div>
-        </footer>
-</body>
+  <body>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-sm-4"></div> -->
+          <div class="col-sm-12" align="center" id="footer">
+            <p><a href="/"><span class="fas fa-home"></span> Home</a> | <a href="https://github.com/JefferyCarmichael/FriendFinder.git"><span
+                  class="fab fa-github"></span> GitHub Repo</a> | <a href="/api/friends"><span class="far fa-address-card"></span>
+                API Friends List</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
 </html>

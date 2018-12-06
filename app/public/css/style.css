@@ -18,6 +18,10 @@
     width: 90%;
     margin-left: 2.1875rem;
 }
+
+option{
+    font-size: .875rem; 
+}
 /* Survey */
 #form1{
     margin-top: 15%;
@@ -30,10 +34,10 @@
     border-color: rgba(134, 132, 132, 0.493);
     background-image: url("/images/concrete_seamless.png");
 }
-
+/* Questionare Form Fields */
 #name,#photo,.custom-select{
-    border-top: .125rem solid rgba(66, 66, 66, 0.336);
-    border-left: .125rem solid rgba(66, 66, 66, 0.336);
+    border-top: .165rem solid rgba(48, 47, 47, 0.226);
+    border-left: .165rem solid rgba(53, 53, 53, 0.226);
 }
 
 #name{
@@ -137,6 +141,10 @@ text-align: center;
 text-shadow: .0625rem .0625rem .5rem rgb(87, 85, 85);  
 background-repeat: no-repeat;
 background-attachment: fixed;
+}
+
+#notDone{
+    color: rgba(248, 16, 16, 0.884);
 }
 /* Page background image */
 body{
