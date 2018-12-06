@@ -4,7 +4,7 @@
 /* survey */
 #title1{
     font-family: 'Fugaz One', cursive;   
-    text-shadow: .3125rem .3125rem .9375rem rgb(85, 85, 85);
+    text-shadow: .125rem .125rem .1375rem rgba(85, 85, 85, 0.582);
     font-size: 1.875rem;
 }
 .mr-2{
@@ -14,7 +14,7 @@
     /* width: 90%; */
     margin: 1rem 3.75rem 1rem 2.5rem;
 }
-.custom-select,#name,#photo,h1,h3,h4{ 
+.custom-select,#name,#photo,h1,h3,h4,h5{ 
     width: 90%;
     margin-left: 2.1875rem;
 }
@@ -29,6 +29,15 @@
     border-width: .125rem;
     border-color: rgba(134, 132, 132, 0.493);
     background-image: url("/images/concrete_seamless.png");
+}
+
+#name,#photo,.custom-select{
+    border-top: .125rem solid rgba(66, 66, 66, 0.336);
+    border-left: .125rem solid rgba(66, 66, 66, 0.336);
+}
+
+#name{
+margin-bottom: .625rem;
 }
 
 h1{
@@ -61,12 +70,12 @@ label{
 }
 
 .btn-primary{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 /* Submit and Take our survey buttons */
 .btn-primary,#btnSubmit{
     text-shadow: .0625rem .0625rem .1875rem rgb(49, 49, 49);   
-    box-shadow:  .125rem .25rem .9375rem .1475rem rgba(78, 78, 78, 0.356);
+    box-shadow:  .125rem .25rem .6375rem .1675rem rgba(36, 35, 35, 0.356);
     background-color: rgba(166, 248, 248, 0.199);
     border-color: rgba(0, 255, 255, 0.212);
     margin-left: auto;
@@ -110,7 +119,7 @@ label{
 footer{
     margin-top: 5%;
     font-weight: bold;
-    text-shadow: .0625rem .0625rem 8px rgb(10, 4, 26)!important;  
+    text-shadow: .0625rem .0625rem .5rem rgb(10, 4, 26)!important;  
     color: rgb(148, 148, 146);
 }
 
@@ -125,7 +134,7 @@ a {
 /* modal */
 #matchName{
 text-align: center;
-text-shadow: .0625rem .0625rem 8px rgb(87, 85, 85);  
+text-shadow: .0625rem .0625rem .5rem rgb(87, 85, 85);  
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
@@ -147,7 +156,7 @@ body{
 }
 
 /* Survey & Home page text shadow */
-h3,h4,.mr-2{  
+h3,h4,h5,.mr-2{  
      text-shadow: .0625rem .0625rem .1875rem rgba(49, 49, 49, 0.575);   
 }
 
@@ -163,26 +172,32 @@ img{
 /* Modal */
 .fill{
     background-image: url("/images/concrete_seamless.png");
-    box-shadow: 0rem 0rem .20rem .125rem rgba(44, 44, 44, 0.4) !important;
+    box-shadow: 0rem 0rem .20rem .125rem rgba(44, 44, 44, 0.164) !important;
+
+}
+
+.btn-info{
+    box-shadow: .125rem .125rem .20rem .125rem rgba(44, 44, 44, 0.342) !important;
+    text-shadow: .0625rem .0625rem .1875rem rgba(49, 49, 49, 0.575);   
 
 }
 
 @media screen and (max-width: 650px) {
     *{
-      font-size: 11px;
+      font-size: .6875rem;
     }  
     .custom-select{
-        margin-top: 10px !important;
+        margin-top: .625rem !important;
     }
    
   }
 
   @media screen and (max-width: 850px) {
     *{
-      font-size: 13px;
+      font-size: .8125rem;
     }  
     .custom-select{
-        margin-top: 10px !important;
+        margin-top: .625rem !important;
     }
    
   }
