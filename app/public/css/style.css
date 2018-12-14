@@ -3,9 +3,9 @@
 }
 /* survey */
 #title1{
-    font-family: 'Fugaz One', cursive;   
+    font-family: 'Qwigley', cursive;
     text-shadow: .125rem .125rem .1375rem rgba(85, 85, 85, 0.582);
-    font-size: 1.875rem;
+    font-size: 3.875rem;
 }
 .mr-2{
     font-weight:400;
@@ -32,7 +32,7 @@ option{
     border-style: solid;
     border-width: .125rem;
     border-color: rgba(134, 132, 132, 0.493);
-    background-image: url("/images/concrete_seamless.png");
+    background-image: url("/images/concrete_seamless1.png");
 }
 /* Questionare Form Fields */
 #name,#photo,.custom-select{
@@ -80,9 +80,9 @@ label{
 .btn-primary,#btnSubmit{
     text-shadow: .0625rem .0625rem .1875rem rgb(49, 49, 49);   
     box-shadow:  .125rem .25rem .6375rem .1675rem rgba(36, 35, 35, 0.356);
-    background-color: rgba(166, 248, 248, 0.199);
+    background-color: rgba(255, 255, 255, 0.164);
     border-color: rgba(0, 255, 255, 0.212);
-    margin-left: auto;
+    margin-left: 2rem;
     margin-right: auto;
     border-radius: 1.5625rem;
 }
@@ -118,6 +118,13 @@ label{
         transform: translateY(.125rem);
         background-color: rgba(0, 255, 255, 0.055)!important;
         border-color:  rgba(18, 163, 115, 0.075)!important;
+}
+.modalbtn:hover {
+    color: rgb(234, 236, 122);
+    background-color: rgba(0, 255, 255, 0.055);
+    box-shadow:inset 0rem 0rem .500rem .0625rem rgba(153, 163, 18, 0.4) ,.125rem .25rem .9375rem .1875rem rgba(95, 93, 93, 0.479)!important;
+    background-color: rgba(0, 255, 255, 0.055);
+    border-color:  rgba(0, 255, 255, 0.055);
 }
 
 footer{
@@ -164,7 +171,7 @@ body{
 }
 
 /* Survey & Home page text shadow */
-h3,h4,h5,.mr-2{  
+h3,h4,h5,.mr-2,.my-1{  
      text-shadow: .0625rem .0625rem .1875rem rgba(49, 49, 49, 0.575);   
 }
 
